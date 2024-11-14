@@ -1,0 +1,41 @@
+
+
+.h1 {
+	font-size: 100px;
+}
+
+#protectedButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	display: block;
+	margin: auto;
+}
+
+#protectedButton:hover {
+    background-color: #0056b3;
+}
+
+#protectedButton {
+	align-items: center;
+}
+
+.hint{
+	margin-top: .3px;
+	margin-left: 50px;
+}
+
+.instructions{
+	display: block;
+	margin: 50px;
+	font-size: 20px;
+}
+
+li{
+	display: block;
+	margin-left: 50px;
+	margin-top: 10px;
+}

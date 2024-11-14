@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+    <!-- Include CSS styles here if needed -->
+</head>
+<body bgcolor="#84BCD8">
+    <div id="login-form">
+		<h1>Puzzle #5</h1>
+      <h2>Please enter the password to access the page:</h2>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+    <div id="content" style="display:none;">
+        <!-- Content of your protected page goes here -->
+        <h2 align="center">Sports &amp; Entertainment Marketing</h2>
+		<h1 align="center">Escape Room&nbsp;</h1>
+		<p class="instructions">Welcome to the Sports and Entertainment Marketing Escape Room! Your journey begins here as you dive into the world of marketing terminology. To unlock the secrets of successful sports and entertainment marketing campaigns, you must first master the language of the industry. Below, you'll find a puzzle filled with key marketing terms related to sports and entertainment. Can you decipher them all?</p>
+		
+		<img class="hintPic" src="images/codedmessage.png">
+		
+		<br>
+		<div class="puzzle5">
+			<img class="pigPenPic" src="images/pigpen-code.png">
+		</div>
+		
+		
+		
+		
+		<p class="puzzleOneHint">Hint: Make sure all letters are lowercase. </p>
+	
+		<a href="puzzle6.html"><button id="protectedButton">Click Here To Move On</button></a>
+	
+		<footer>
+       	 	<!-- Footer content goes here -->
+        	<p>&copy; 2024 Nielson Sports Marketing. All rights reserved.</p>
+		</footer>
+
+	
+
+
+
+    </div>
+
+    <!-- Include JavaScript code here -->
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            // Replace 'your_password' with your actual password
+            if (password === "advertising") {
+                document.getElementById("login-form").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Incorrect password. Please try again.");
+				window.history.go();
+            }
+        }
+    </script>
+</body>
+</html>

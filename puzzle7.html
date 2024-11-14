@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+    <!-- Include CSS styles here if needed -->
+</head>
+<body bgcolor= "#987654">
+    <div id="login-form">
+		<h1>Puzzle #7</h1>
+      <h2>Please enter the password to access the page:</h2>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+	<div id="content" style="display:none;">
+		<h2 align="center">Sports &amp; Entertainment Marketing</h2>
+		<h1 align="center">Escape Room&nbsp;</h1>
+		<p class="instructions">What we would really like to understand is the 7Ps of marketing. We have some images below, can you please help us work out which of the 7Ps that they most likely represent.
+		<br> 
+		<br>
+		Note: There are seven images and 7Ps – so one of each.</p>
+		
+		
+		
+		<div class="image-table">
+		<div class="table-row">
+			<div class="table-cell"><h1>1. Happy Customers In The Store</h1><img src="images/customers-768x575.jpg" alt="Image 1"></div>
+			<div class="table-cell"><h1>2. Items On Sale</h1><img src="images/sale.jpg" alt="Image 2"></div>
+			<div class="table-cell"><h1>3. Range Of merchandise</h1><img src="images/inside-768x432.jpg" alt="Image 3"></div>
+			<div class="table-cell"><h1>4. Tags On Products</h1><img src="images/price.png" alt="Image 4"></div>
+		</div>
+		<div class="table-row">
+			<div class="table-cell"><h1>5. The Pre-Order Form</h1><img src="images/form.jpg" alt="Image 5"></div>
+			<div class="table-cell"><h1>6. The Sales Staff</h1><img src="images/keeper.gif" alt="Image 6"></div>
+			<div class="table-cell"><h1>7. Our Shop</h1><img src="images/pets.png" alt="Image 7"></div>
+		</div>
+	</div>
+	
+	
+	
+		<p class="puzzleOneHint">Hint: Place the image numerals into the following 7Ps sequence… </p>
+			<ul>
+				<li>Product</li>
+				<li>Price</li>
+				<li>Place</li>
+				<li>Promotion</li>
+				<li>Process</li>
+				<li>People</li>
+				<li>Physical evidence</li>
+			</ul>
+			<br>
+			<br>
+		<p class="puzzleOneHint">
+			That means that the number of the image for product to be listed first, followed by image number for price, and so on. Use numerals only and do not add any spaces. 
+		</p>
+	
+		<a href="puzzle7.html"><button id="protectedButton">Click Here To Move On</button></a>
+	
+		<footer>
+       	 	<!-- Footer content goes here -->
+        	<p>&copy; 2024 Nielson Sports Marketing. All rights reserved.</p>
+		</footer>
+
+
+    </div>
+
+    <!-- Include JavaScript code here -->
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            // Replace 'your_password' with your actual password
+            if (password === "3472561") {
+                document.getElementById("login-form").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Incorrect password. Please try again.");
+				window.history.go();
+            }
+        }
+    </script>
+</body>
+</html>

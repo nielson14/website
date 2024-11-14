@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>"Sports &amp; Entertainment Marketing Escape Room"</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body bgcolor="#E3EAA4">
+    <div id="login-form">
+		<h1>Puzzle #4</h1>
+      <h2>Please enter the password to access the page:</h2>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+	<div id="content" style="display:none;">
+<h3 align="center">Sports &amp; Entertainment Marketing</h3>	
+<h1 align="center">Puzzle #4 </h1>
+<h1 align="center">Promotional Mix Cipher Challenge</h1>
+
+<p class="instructions">Welcome to the Promotional Mix Cipher Challenge! In this puzzle, you'll need to decipher a coded message related to the elements of the promotional mix. Each letter in the coded message has been shifted shown by the chart below. Use the provided cipher key to decode the message and uncover the missing element of the promotional mix, which will be the password to unlock the next stage of your escape room adventure!</p>
+
+<table>
+    <tr>
+        <th class="cipher">A</th>
+        <th class="cipher">B</th>
+        <th class="cipher">C</th>
+		<th class="cipher">D</th>
+        <th class="cipher">E</th>
+        <th class="cipher">F</th>
+		<th class="cipher">G</th>
+        <th class="cipher">H</th>
+        <th class="cipher">I</th>
+		<th class="cipher">J</th>
+        <th class="cipher">K</th>
+        <th class="cipher">L</th>
+		<th class="cipher">M</th>
+    </tr>
+    <tr>
+        <th class="cipher">Z</th>
+        <th class="cipher">Y</th>
+        <th class="cipher">X</th>
+		<th class="cipher">W</th>
+        <th class="cipher">V</th>
+        <th class="cipher">U</th>
+		<th class="cipher">T</th>
+        <th class="cipher">S</th>
+        <th class="cipher">R</th>
+		<th class="cipher">Q</th>
+        <th class="cipher">P</th>
+        <th class="cipher">O</th>
+		<th class="cipher">N</th>
+    </tr>
+	    
+</table>
+<p class="instructions">Coded Message:<br> Urmw gsv nrhhrmt vovnvmg: wrivxg hzovh, kfyorx ivozgrlmh, kvihlmzo hzovh, hzovh kilnlgrlm</p>
+	
+<p class="puzzleOneHint">Hint: Make sure all letters are lowercase. </p>
+	
+<a href="puzzle5.html"><button id="protectedButton">Click Here To Move On</button></a>
+
+	
+<footer>
+        <!-- Footer content goes here -->
+        <p>&copy; 2024 Nielson Sports Marketing. All rights reserved.</p>
+</footer>
+
+    </div>
+
+    <!-- Include JavaScript code here -->
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            // Replace 'your_password' with your actual password
+            if (password === "dabc") {
+                document.getElementById("login-form").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Incorrect password. Please try again.");
+				window.history.go();
+            }
+        }
+    </script>
+</body>
+</html>
+
+</body>
+</html>

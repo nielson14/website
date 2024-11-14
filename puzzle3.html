@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+
+<body bgcolor="#AED899">
+    <div id="login-form">
+      <h1>Puzzle #3</h1>
+      <h2>Please enter the password to access the page:</h2>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+	<div id="content" style="display:none;">
+<h3 align="center">Sports &amp; Entertainment Marketing</h3>	
+<h1 align="center">Puzzle #3 </h1>
+<h1 align="center">Target Audience Identification</h1>
+
+<p class="instructions">Great job on solving the market segmentation challenge! Now, let's put your skills to the test by identifying the target audience for a sports and entertainment marketing campaign. Below are descriptions of different audience segments. Can you match each description with the corresponding target audience?</p>
+
+<table>
+    <tr>
+        <th>Segments</th>
+        <th></th>
+        <th>Descriptions</th>
+    </tr>
+    <tr>
+        <td>1) Demographic</td>
+        <td></td>
+        <td>A) This audience segment includes individuals who are passionate about outdoor activities, adventure sports, and extreme sports.</td>
+    </tr>
+    <tr>
+        <td>2) Psychographic</td>
+        <td></td>
+        <td>B) This audience segment comprises residents of urban areas with a population of over 1 million people.</td>
+    </tr>
+    <tr>
+        <td>3) Geographic</td>
+        <td></td>
+        <td>C) This audience segment consists of frequent concertgoers who attend live music events at least once a month.</td>
+    </tr>
+	    <tr>
+        <td>4) Behavioral</td>
+        <td></td>
+        <td>D) This audience segment consists of males and females aged 18-34, with a college education and an annual income of $50,000 or more.</td>
+    </tr>
+	    
+</table>
+	
+<p class="puzzleOneHint">Hint: Make sure all letters are lowercase. </p>
+	
+<a href="puzzle4.html"><button id="protectedButton">Click Here To Move On</button></a>
+	
+<footer>
+        <!-- Footer content goes here -->
+        <p>&copy; 2024 Nielson Sports Marketing. All rights reserved.</p>
+</footer>
+
+	
+
+    </div>
+
+    <!-- Include JavaScript code here -->
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            // Replace 'your_password' with your actual password
+            if (password === "badce") {
+                document.getElementById("login-form").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Incorrect password. Please try again.");
+				window.history.go();
+            }
+        }
+    </script>
+	
+</body>
+</html>

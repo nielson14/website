@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>"Sports &amp; Entertainment Marketing Escape Room"</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body bgcolor="lightgrey">
+    <div id="login-form">
+      <h1>Puzzle #2</h1>
+		<h2>Please enter the password to access the page:</h2>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+	<div id="content" style="display:none;">
+<h3 align="center">Sports &amp; Entertainment Marketing</h3>	
+<h1 align="center">Puzzle #2 </h1>
+<h1 align="center">Market Segmentation Challenge</h1>
+
+<p class="instructions">Congratulations on solving the first puzzle! You're one step closer to mastering the world of sports and entertainment marketing. Now, let's delve into the concept of market segmentation, a crucial aspect of any successful marketing strategy.</p>
+	
+<p class="instructions">Below are descriptions of different types of consumer segments. Can you match each description with the corresponding term?
+	</p>
+<table>
+    <tr>
+        <th>Term</th>
+        <th></th>
+        <th>Definition</th>
+    </tr>
+    <tr>
+        <td>1) Demographic</td>
+        <td></td>
+        <td>A) This segmentation strategy categorizes consumers based on their lifestyle, personality traits, interests, and values.</td>
+    </tr>
+    <tr>
+        <td>2) Psychographic</td>
+        <td></td>
+        <td>B) This segmentation strategy divides the market based on characteristics such as age, gender, income, and education level.</td>
+    </tr>
+    <tr>
+        <td>3) Geographic</td>
+        <td></td>
+        <td>C) This segmentation strategy focuses on consumer behavior, including purchasing patterns, usage rate, brand loyalty, and product benefits sought.</td>
+    </tr>
+	    <tr>
+        <td>4) Behavioral</td>
+        <td></td>
+        <td>D) This segmentation strategy divides the market based on location, such as region, country, city, or climate.</td>
+    </tr>
+	    <tr>
+        <td>5) Market Segmentation</td>
+        <td></td>
+        <td>E) Dividing a broad target market into smaller, more manageable segments based on common characteristics, needs, or behaviors.</td>
+    </tr>
+</table>
+	
+<p class="puzzleOneHint">Hint: Make sure all letters are lowercase. </p>
+	
+<a href="puzzle3.html"><button id="protectedButton">Click Here To Move On</button></a>
+	
+<footer>
+        <!-- Footer content goes here -->
+        <p>&copy; 2024 Nielson Sports Marketing. All rights reserved.</p>
+</footer>
+
+	
+    </div>
+
+    <!-- Include JavaScript code here -->
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            // Replace 'your_password' with your actual password
+            if (password === "target") {
+                document.getElementById("login-form").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Incorrect password. Please try again.");
+				window.history.go();
+            }
+        }
+    </script>
+	
+</body>
+</html>
